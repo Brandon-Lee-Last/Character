@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Head = ({age, gender}) => {
 
@@ -6,18 +7,22 @@ const Head = ({age, gender}) => {
 
         if(age < 40){
             if(gender === 'Male'){
-                return <img src="icons/m-head.png" />
+                return <Image src="/icons/m-head.png" width='100%' height='100%'
+                objectFit="fit"/>
             }
             else{
-                return <img src="icons/f-head.png" />
+                return <Image src="/icons/f-head.png" width='100%' height='100%'
+                objectFit="fit"/>
             }
         }
         else{
             if(gender === 'Male'){
-                return <img src="icons/old-m-head.png" />
+                return <Image src="/icons/old-m-head.png" width='100%' height='100%'
+                objectFit="fit"/>
             }
             else{
-                return <img src="icons/old-f-head.png" />
+                return <Image src="/icons/old-f-head.png" width='100%' height='100%'
+                objectFit="fit"/>
             }
         }
     }

@@ -11,9 +11,9 @@ const Body = ({formData: {name, surname, gender, birth_date, occupation, colour}
             <div className={styles.users__character}>
             <Introduction name={name} surname={surname} occupation={occupation}/>
             <br/>
-            <div className={styles.char__head}>
-            <Head age={birth_date} gender={gender}/>
-            </div>
+                <div className={styles.char__head}>
+                <Head age={birth_date} gender={gender}/>
+                </div>
             <Torso occupation={occupation}/>
             </div>
             <Legs colour={colour}/>
